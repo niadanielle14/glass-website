@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /*This should take up full space of monitor*/
+    min-height: 100vh;
+    /*This gives a a 2 colored background starting from the right to the top*/
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    /*adding flex allows you to align items horizontally - YOU HAVE TO ADD FLEX IN ORDER FOR ALIGN ITEMS AND JUSTIFY CONTENT TO WORK*/
+    display: flex;
+    align-items: center;
+    /*adding justifycontent is allowing you to align items vertically*/
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    /*to stretch the page out*/
+    width: 60%;
+    /*how to add glass looking effect to white box by using rgba for opacity. 0.7 & 0.3 is staying right to bottom 70% and 30% */
+    background: linear-gradient(
+            to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    /*adding border-radius makes the borders rounded - 2rem is the same as 20px*/
+    border-radius: 2rem;
+    /*the higher the number in the zindex, the more forward the class comes to the front of the page*/
+    z-index: 2;
+    /*this adds a blur effect the higher the rem the more blurred*/
+    backdrop-filter: blur(2rem);
+    /*flex positions the divs inside next to each other*/
+    display: flex;
+
+}
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient(
+            to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+    );
+    /*Height and width has to be the same so border radius works*/
+    height: 20rem;
+    width: 20rem;
+    /*must add postion in order for it to be moved*/
+    position: absolute;
+    /*this moves it to the top left by adding top and left */
+    border-radius: 50%;
+}
+/*this moves both circle classes in different directions*/
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard {
+    /*takes up all the available space */
+    flex: 1;
+    display: flex;
+    /*this moves all items in a column*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*this aligns the text */
+    text-align: center;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+}
+.tasks {
+    flex: 1;
+}
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+
+
+}
