@@ -171,6 +171,17 @@ main {
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.221);
     justify-content: space-between;
 }
-percentage {
-
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+}
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
 }
