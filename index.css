@@ -3,8 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2, p {
+    color: #6583c6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
 main {
+    /*add font family here to effect whole page*/
+    font-family: 'Poppins', sans-serif;
     /*This should take up full space of monitor*/
     min-height: 100vh;
     /*This gives a a 2 colored background starting from the right to the top*/
@@ -80,7 +97,12 @@ main {
     border-radius: 2rem;
 }
 .tasks {
-    flex: 1;
+    flex: 2;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    /*spaces the whole div evenly*/
+    justify-content: space-evenly;
 }
 .link {
     display: flex;
@@ -91,6 +113,64 @@ main {
 
 .link h2 {
     padding: 0rem 2rem;
+}
 
+.buy {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    /*add this to make the image work with this div*/
+    position: relative;
+}
+
+.buy img {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.buy h2 {
+    /*stretches the text out more vertically and stacks ontop of each other*/
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+/*TASK DIV*/
+.status {
+    /*to push the content down */
+    margin-bottom: 3rem;
+
+}
+
+.status input {
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    /*removes border from around*/
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(
+        to left top,
+        gba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    /*x/y position is 6 and 20 is the amount of blur*/
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.221);
+    justify-content: space-between;
+}
+percentage {
 
 }
