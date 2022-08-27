@@ -29,7 +29,7 @@ main {
     /*adding flex allows you to align items horizontally - YOU HAVE TO ADD FLEX IN ORDER FOR ALIGN ITEMS AND JUSTIFY CONTENT TO WORK*/
     display: flex;
     align-items: center;
-    /*adding justifycontent is allowing you to align items vertically*/
+    /*adding justify content is allowing you to align items vertically*/
     justify-content: center;
 }
 
@@ -46,7 +46,7 @@ main {
     );
     /*adding border-radius makes the borders rounded - 2rem is the same as 20px*/
     border-radius: 2rem;
-    /*the higher the number in the zindex, the more forward the class comes to the front of the page*/
+    /*the higher the number in the z index, the more forward the class comes to the front of the page*/
     z-index: 2;
     /*this adds a blur effect the higher the rem the more blurred*/
     backdrop-filter: blur(2rem);
@@ -64,7 +64,7 @@ main {
     /*Height and width has to be the same so border radius works*/
     height: 20rem;
     width: 20rem;
-    /*must add postion in order for it to be moved*/
+    /*must add position in order for it to be moved*/
     position: absolute;
     /*this moves it to the top left by adding top and left */
     border-radius: 50%;
@@ -131,7 +131,7 @@ main {
     right: 10%;
 }
 .buy h2 {
-    /*stretches the text out more vertically and stacks ontop of each other*/
+    /*stretches the text out more vertically and stacks on top of each other*/
     width: 40%;
     color: white;
     font-weight: 600;
@@ -161,7 +161,7 @@ main {
     display: flex;
     background: linear-gradient(
         to left top,
-        gba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8),
         rgba(255, 255, 255, 0.5)
     );
     border-radius: 1rem;
@@ -178,7 +178,7 @@ main {
     border-radius: 1rem;
     /*adding this after you add the position absolute underneath*/
     position: relative;
-    /*corrects the left 60 from leaving postion*/
+    /*corrects the left 60 from leaving position*/
     overflow: hidden;
 }
 .progress::after{
